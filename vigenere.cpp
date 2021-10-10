@@ -11,14 +11,19 @@ std::string encryptVigenere(std::string plaintext, std::string keyword)
     int num = 0;
     for(int i = 0; i < plaintext.length(); i++)
     { 
-            for(int x = 0; x < 27; x++)
+        
+        for(int a = 0; a < 27; a++)
+        {
+            if(num >= keyword.length() || !isalpha(plaintext[i]))
             {
-                if(keyword[num] == alph[x])
-                {
-                    shift = x;
-                }
-                num++;
+                num = 0;
             }
+            if(keyword[num] == alph[a])
+            {
+                shift = a;
+            }
+        }  
+        num++;
         result += shiftChar(plaintext[i], shift);
     }
     return result;
