@@ -8,6 +8,7 @@ Assignment: Lab 6
 #include "funcs.h"
 #include "caesar.h"
 #include "vigenere.h"
+#include "decrypt.h"
 
 int main()
 {
@@ -24,7 +25,17 @@ int main()
   std::cout<<"Task C \n";
   std::cout<<"encryptVigenere(Hello, World!, cake) = "<<encryptVigenere("Hello, World!", "cake");
   std::cout<<"\n";
+  std::cout<<"encryptVigenere(Krin.., Pa  chk! l, abc) = "<<encryptVigenere("Krin.., Pa  chk! l", "abc");
+  std::cout<<"\n";
 
+  //Tesing Task D
+  std::cout<<"\n --------------------------- \n";
+  std::cout<<"Task D \n";
+  std::cout<<"decryptCaesar(Rovvy, Gybvn!, 10) = "<<decryptCaesar("Rovvy, Gybvn!", 10);
+  std::cout<<"\n";
+  std::cout<<"decryptVigenere(Jevpq, Wyvnd!, cake) = "<<decryptVigenere("Jevpq, Wyvnd!", "cake");
+  std::cout<<"\n";
+  std::cout<<"decryptVigenere(Kskn.., Qc  djk! m, abc) = "<<decryptVigenere("Kskn.., Qc  djk! m", "abc");
 
   return 0;
 }
