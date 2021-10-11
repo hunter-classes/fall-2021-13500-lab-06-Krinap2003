@@ -4,7 +4,7 @@ main: main.o funcs.o caesar.o vigenere.o decrypt.o
 tests: tests.o funcs.o caesar.o vigenere.o decrypt.o
 	g++ -o tests tests.o funcs.o caesar.o vigenere.o decrypt.o
 
-test-ascii: test-ascii.o
+test-ascii: test-ascii.o 
 	g++ -o test-ascii test-ascii.o
 
 
@@ -31,4 +31,4 @@ dectypt.o: decrypt.cpp decrypt.h
 	g++ -c -g decrypt.cpp
 
 clean:
-	rm -f main.o funcs.o tests.o test-ascii.o caesar.o vigenere.o
+	rm -f main.o funcs.o tests.o test-ascii.o caesar.o vigenere.o decrypt.o

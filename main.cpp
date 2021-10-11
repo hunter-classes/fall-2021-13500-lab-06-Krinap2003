@@ -12,6 +12,8 @@ Assignment: Lab 6
 
 int main()
 {
+
+
   //Tesing Task B
   std::cout<<"\n --------------------------- \n";
   std::cout<<"Task B \n";

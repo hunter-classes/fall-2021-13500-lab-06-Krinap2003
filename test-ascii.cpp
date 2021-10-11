@@ -1,13 +1,15 @@
 //Task A
 #include <iostream>
 #include <cctype>
-void testascii(std::string s);
+#include "funcs.h"
+
 
 int main()
 {
     //Task A
     std::cout<<"Task A \n";
     testascii("Cat :3 Dog");
+    testascii("Hello World!");
     return 0;
 }
 
