@@ -1,3 +1,3 @@
 #pragma once
-
-// add prototypes here
+#include <iostream>
+void testascii(std::string s);

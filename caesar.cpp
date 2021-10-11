@@ -4,6 +4,7 @@
 #include <cctype>
 #include "caesar.h"
 
+//Helper function that determines the amount of stift for the char
 char shiftChar(char c, int rshift)
 {
     char result;
@@ -38,6 +39,7 @@ char shiftChar(char c, int rshift)
     return result;
 }
 
+//This function implements Caesar chiper encryption
 std::string encryptCaesar(std::string plaintext, int rshift)
 {
     std::string result= "";

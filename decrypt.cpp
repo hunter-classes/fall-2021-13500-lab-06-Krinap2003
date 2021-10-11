@@ -4,6 +4,7 @@
 #include "caesar.h"
 #include "decrypt.h"
 
+//Shits char backwards
 char shiftChar2(char c, int rshift)
 {
     char result;
@@ -38,6 +39,7 @@ char shiftChar2(char c, int rshift)
     return result;
 }
 
+//decrypts caesar: it shifts the letters backwards. 
 std::string decryptCaesar(std::string ciphertext, int rshift)
 {
     std::string result= "";
@@ -48,6 +50,7 @@ std::string decryptCaesar(std::string ciphertext, int rshift)
     return result;
 }
 
+//decrypt vigenere: decrypts the paintext backward
 std::string decryptVigenere(std::string plaintext, std::string keyword)
 {
     std::string result = "";

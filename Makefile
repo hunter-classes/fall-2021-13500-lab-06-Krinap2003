@@ -18,7 +18,7 @@ main.o: main.cpp funcs.h
 tests.o: tests.cpp doctest.h funcs.h 
 	g++ -c tests.cpp -std=c++11
 
-test-ascii.o: test-ascii.cpp
+test-ascii.o: test-ascii.cpp funcs.h
 	g++ -c -g test-ascii.cpp
 
 caesar.o: caesar.cpp caesar.h
