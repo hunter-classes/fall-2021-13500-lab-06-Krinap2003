@@ -1,8 +1,8 @@
 main: main.o funcs.o caesar.o vigenere.o decrypt.o
 	g++ -o main main.o funcs.o caesar.o vigenere.o decrypt.o
 
-tests: tests.o funcs.o caesar.o vigenere.o decrypt.o
-	g++ -o tests tests.o funcs.o caesar.o vigenere.o decrypt.o
+tests: tests.o funcs.o caesar.o vigenere.o decrypt.o 
+	g++ -o tests tests.o funcs.o caesar.o vigenere.o decrypt.o 
 
 test-ascii: test-ascii.o 
 	g++ -o test-ascii test-ascii.o

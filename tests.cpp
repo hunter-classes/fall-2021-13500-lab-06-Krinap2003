@@ -6,7 +6,6 @@
 #include "decrypt.h"
 #include "cctype"
 
-
 //Task B
 TEST_CASE("string encryptCaesar base case")
 {
@@ -32,6 +31,7 @@ TEST_CASE("string decrypt base cases")
     CHECK(shiftChar2('G', 10) == 'W');
     CHECK(shiftChar2('o', 5) == 'j');
     CHECK(decryptCaesar("Rovvy, Gybvn!", 10) == "Hello, World!");
+    CHECK(decryptCaesar("OVMRE TEXIP!", 4) == "KRINA PATEL!");
     CHECK(decryptVigenere("Jevpq, Wyvnd!", "cake") == "Hello, World!");
     CHECK(decryptCaesar("", 10) == "");
     CHECK(decryptVigenere("", "cake") == "");
